@@ -1,0 +1,33 @@
+{
+  "name": "react-router-transition",
+  "version": "0.1.0",
+  "description": "react-router v4 with transition effects",
+  "main": "dist/EffectedSwitch.js",
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2",
+    "react-transition-group": "^4.3.0",
+    "styled-components": "^4.4.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "@types/react-router-dom": "^5.1.3",
+    "@types/react-transition-group": "^4.2.3",
+    "@types/styled-components": "^4.4.1",
+    "html-webpack-plugin": "^3.2.0",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.4",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack && webpack-dev-server --hot --inline --watch-content-base --content-base public/ --open-page index.html --history-api-fallback",
+    "build": "tsc -p ./ --declaration --outDir dist"
+  },
+  "author": "matsurai25 <m.matsurai25@gmail.com> (https://github.com/matsurai25)",
+  "license": "MIT"
+}
